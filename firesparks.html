@@ -56,7 +56,7 @@
             let fixed_inner_speed;
             // check if we random_size_and_speed is true or not
             random_size_and_speed == false ? (fixed_index = '', fixed_inner_speed = 2000) : (fixed_index = index, fixed_inner_speed = inner_speed);
-            // we are returning the HTML code for each spark here every tie the spark_HTML function is called by the loop below
+            // we are returning the HTML code for each spark here every time the spark_HTML function is called by the loop below
             return '<div class="spark" style="animation-name: travel' + index + '; animation-duration: ' + spark_travel_speed + 'ms; animation-delay: ' + spark_travel_delay + 'ms;"><div class="spark_inner" style="animation-name: scaling' + fixed_index + '; animation-duration: ' + fixed_inner_speed + 'ms; animation-delay:' + inner_delay + 'ms;"></div></div>';
         }
 
