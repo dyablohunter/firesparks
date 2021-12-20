@@ -92,14 +92,13 @@
             let point2h = -3;
             styles.innerHTML += "@keyframes travel" + i + " { 0% {transform: translate(" + point1w + "vw, " + point1h + "vh)} 100% {transform: translate(" + point2w + "vw, " + point2h + "vh);} }";
 
-            // call the random function to get a random inner_speed
             let inner_speed = big_random(1500, 2000); // miliseconds
             // call the random function to get a random inner_delay
             let inner_delay = big_random(1, 1200); // miliseconds
             // call the random function to get a random number for this spark's travel duration
-            let speed = big_random(32000, 50000); // miliseconds
+            let speed = big_random(6000, 18000); // miliseconds
             // call the random function to get a random number for this spark's travel speed
-            let delay = big_random(320, 15000); // miliseconds
+            let delay = big_random(1, 15000); // miliseconds
 
 
             // duplicate the HTML structure for the fire sparks but with different parameters every time
